@@ -1,5 +1,32 @@
 # Message-Effect-ID-s-
 
+# Telegram Message Effect IDs ⚡
+
+A comprehensive collection of **Telegram Message Effect IDs**. These 64-bit integers are used to trigger premium animated full-screen effects when sending messages via the Telegram API (using libraries like Pyrogram, Telethon, or python-telegram-bot).
+
+## 📖 How to Use
+
+When sending a message using a Telegram Bot API library, pass the specific `effect_id` to the `message_effect_id` parameter.
+
+### Python Example (Pyrogram)
+
+```python
+from pyrogram import Client
+
+app = Client("my_account")
+
+# Send a message with the "🔥" fire effect
+target_chat = "username"
+effect_id = 5104841245755180586
+
+with app:
+    app.send_message(
+        chat_id=target_chat,
+        text="This allows you to send premium effects! 🔥",
+        message_effect_id=effect_id
+    )
+```
+
 ### 👍		5107584321108051014		animated effect
 ### 👎		5104858069142078462		animated effect
 ### ❤		5159385139981059251		animated effect
